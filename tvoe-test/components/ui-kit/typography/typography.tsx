@@ -3,14 +3,14 @@ import s from './typography.module.scss'
 import { clsx } from 'clsx'
 
 type TypographyProps<T extends ElementType = 'p'> = {
-    variant?: 'title' | 'body'
+    variant?: 'title1' | 'title2' | 'body1' | 'body2'
     as?: T
     children: ReactNode
     className?: string
 } & ComponentPropsWithoutRef<T>
 
 export const Typography = <T extends ElementType = 'p'>({
-    variant = 'body',
+    variant = 'body1',
     as,
     className,
     children,

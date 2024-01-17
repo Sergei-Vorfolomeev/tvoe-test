@@ -7,10 +7,18 @@
   color: var(--font-color);
 }
 
-.title {
+.title1 {
   @include typography(var(--font-size-l), var(--font-weight-bold), var(--line-height-l))
 }
 
-.secondary {
+.title2 {
+  @include typography(var(--font-size-l), var(--font-weight-medium), var(--line-height-l))
+}
+
+.body1 {
+  @include typography(var(--font-size-m), var(--font-weight-medium), var(--line-height-m))
+}
+
+.body2 {
   @include typography(var(--font-size-m), var(--font-weight-regular), var(--line-height-m))
 }

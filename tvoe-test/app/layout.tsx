@@ -1,10 +1,15 @@
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+import { Archivo, Roboto } from 'next/font/google'
 import '../styles/index.scss'
 
 const inter = Roboto({
     weight: ['400', '500', '700'],
     subsets: ['cyrillic', 'latin'],
+})
+
+export const archivo = Archivo({
+    weight: ['900'],
+    subsets: ['latin'],
 })
 
 export const metadata: Metadata = {

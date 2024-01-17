@@ -1,0 +1,12 @@
+.container {
+  margin-left: 210px;
+
+  .title {
+    margin-bottom: 25px;
+  }
+
+  .newMoviesContainer {
+    display: flex;
+    gap: 32px;
+  }
+}

@@ -1,0 +1,52 @@
+.container {
+  margin-left: 210px;
+
+  .title {
+    display: flex;
+    margin-bottom: 25px;
+
+    .strokeText {
+      min-width: 195px;
+      font-size: 52px;
+      font-weight: 900;
+      margin-right: 10px;
+      background: linear-gradient(to right, #6A11CB, #2575FC);
+      background-size: cover;
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 4px transparent;
+      color: var(--bg-color);
+    }
+  }
+
+  .top10Container {
+    display: flex;
+    gap: 32px;
+
+    .itemContainer {
+      display: flex;
+
+      .img {
+        position: relative;
+        left: -80px;
+      }
+
+      .strokeFigures {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: 36rem;
+        font-weight: 900;
+        background: linear-gradient(to right, #6A11CB, #2575FC);
+        background-size: cover;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+        color: var(--bg-color);
+        position: relative;
+        z-index: -1;
+        left: -40px;
+      }
+    }
+  }
+
+
+}

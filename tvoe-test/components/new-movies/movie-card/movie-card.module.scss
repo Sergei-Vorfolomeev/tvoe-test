@@ -1,0 +1,22 @@
+.cardContainer {
+  position: relative;
+
+    .cardImg {
+      border-radius: 30px;
+    }
+
+  .rating {
+    width: 75px;
+    height: 48px;
+    position: absolute;
+    left: 28px;
+    top: 28px;
+    background: var(--primary-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+  }
+}
