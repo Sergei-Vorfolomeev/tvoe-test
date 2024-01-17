@@ -1,0 +1,16 @@
+@mixin typography($fontSize, $fontWeight, $lineHeight) {
+  margin: 0;
+
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: var(--font-color);
+}
+
+.title {
+  @include typography(var(--font-size-l), var(--font-weight-bold), var(--line-height-l))
+}
+
+.secondary {
+  @include typography(var(--font-size-m), var(--font-weight-regular), var(--line-height-m))
+}

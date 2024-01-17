@@ -1,13 +1,14 @@
-import React, { ComponentPropsWithoutRef, ElementType } from 'react'
+import React, { ComponentPropsWithoutRef, ElementType, ReactNode } from 'react'
 import { clsx } from 'clsx'
 import s from './button.module.scss'
 
-type ButtonProps<T extends ElementType> = {
+type ButtonProps<T extends ElementType = 'button'> = {
     variant?: 'primary' | 'secondary' | 'link'
     as?: T
+    children: ReactNode
 } & ComponentPropsWithoutRef<T>
 
-export const Button = <T extends ElementType>({
+export const Button = <T extends ElementType = 'button'>({
     variant = 'primary',
     as,
     className,

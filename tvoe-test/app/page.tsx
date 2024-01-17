@@ -1,6 +1,14 @@
 import Image from 'next/image'
-import { Button } from '@/components'
+import { Button, Typography } from '@/components'
 
 export default function Home() {
-    return <Button variant={'primary'}>{'Смотреть'}</Button>
+    return (
+        <div>
+            <Button variant={'primary'}>
+                <Typography variant={'title'} as={'h1'}>
+                    Новинки
+                </Typography>
+            </Button>
+        </div>
+    )
 }
