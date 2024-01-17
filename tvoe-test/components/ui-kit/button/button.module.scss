@@ -3,24 +3,24 @@
   cursor: pointer;
   user-select: none;
 
-  height: 5rem;
+  height: 8rem;
   display: inline-flex;
-  gap: 0.5rem;
+  gap: 1.6rem;
   align-items: center;
   justify-content: center;
 
   box-sizing: border-box;
-  padding: 1.5rem 2rem;
+  padding: 2.4rem 3.2rem;
 
-  font-size: 1.875rem;
+  font-size: 3rem;
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 3.2rem;
   text-align: center;
   text-decoration: none;
 
   background-color: transparent;
   border: none;
-  border-radius: 1rem;
+  border-radius: 1.6rem;
 
   &:disabled {
     cursor: default;
