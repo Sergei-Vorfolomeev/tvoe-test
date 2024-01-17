@@ -1,0 +1,49 @@
+@mixin button {
+  all: unset;
+  cursor: pointer;
+  user-select: none;
+
+  height: 5rem;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding: 1.5rem 2rem;
+
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 1rem;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+}
+
+.primary {
+  @include button;
+
+  background: linear-gradient(to right, #6A11CB, #2575FC);
+}
+
+.secondary {
+  @include button;
+
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0.1));
+}
+
+.link {
+  @include button;
+
+}
+
+
+
