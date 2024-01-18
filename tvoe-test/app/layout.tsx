@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Archivo, Roboto } from 'next/font/google'
 import '../styles/index.scss'
+import { SideBar } from '@/components/side-bar'
 
 const inter = Roboto({
     weight: ['400', '500', '700'],
@@ -24,7 +25,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="ru">
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                <SideBar />
+                {children}
+            </body>
         </html>
     )
 }
