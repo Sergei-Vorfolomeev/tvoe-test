@@ -1,0 +1,62 @@
+.container {
+  min-height: 80rem;
+  position: relative;
+
+  .coverContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .captionContainer {
+    width: 735px;
+    height: 536px;
+    position: absolute;
+    left: 195px;
+    top: 78px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .infoBar {
+      display: flex;
+      height: 48px;
+      gap: 31px;
+      align-items: center;
+      margin-top: -5px;
+      margin-bottom: 22px;
+
+      .rating {
+        width: 75px;
+        height: 100%;
+        padding: 14px 22px 12px;
+      }
+
+      .link {
+        font-size: 28px;
+        font-weight: var(--font-weight-regular);
+        max-width: 105px;
+        height: 100%;
+        padding: 0;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+    .description {
+      text-align: left;
+    }
+
+    .buttonsContainer {
+      display: flex;
+      gap: 17px;
+
+      .btn {
+       // width: 243px;
+      }
+    }
+  }
+}

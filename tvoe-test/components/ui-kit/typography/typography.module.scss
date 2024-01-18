@@ -22,3 +22,7 @@
 .body2 {
   @include typography(var(--font-size-m), var(--font-weight-regular), var(--line-height-m))
 }
+
+.body3 {
+  @include typography(var(--font-size-s), var(--font-weight-medium), var(--line-height-s))
+}

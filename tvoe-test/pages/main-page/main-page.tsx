@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import s from './main-page.module.scss'
-import { Header } from '@/components/header'
 import { MovieCardType } from '@/components/new-movies/movie-card/movie-card.types'
 import { InferGetStaticPropsType } from 'next'
 import { NewMovies } from '@/components/new-movies/new-movies'
@@ -11,7 +10,8 @@ import catchMeImg from '../../assets/img/catch-me.png'
 import myUnhappinessImg from '../../assets/img/my-unhappiness.png'
 import redNotificationImg from '../../assets/img/red-notification.png'
 import theWitcherImg from '../../assets/img/the-witcher.png'
-import { Top10 } from '@/components/top10/top10'
+import { Top10 } from '@/components/top10'
+import { MainHeader } from '@/components/main-header'
 
 const NEW_MOVIES: MovieCardType[] = [
     { id: '1', name: 'Синий жук', rating: '10', img: blueBugImg },
@@ -34,7 +34,7 @@ const TOP_10: Pick<MovieCardType, 'img'>[] = [
 const MainPage = () => {
     return (
         <div className={s.mainContainer}>
-            <Header />
+            <MainHeader />
             <NewMovies movies={NEW_MOVIES} />
             <Top10 movies={TOP_10} />
         </div>

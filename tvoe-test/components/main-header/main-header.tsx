@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import movieCover from '../../assets/img/image-3.png'
 import movieName from '../../assets/img/image-4.png'
-import s from './header.module.scss'
+import s from './main-header.module.scss'
 import { Button, Typography } from '@/components'
 
 type HeaderProps = {}
 
-export const Header = ({}: HeaderProps) => {
+export const MainHeader = ({}: HeaderProps) => {
     return (
         <header className={s.container}>
             <div className={s.coverContainer}>

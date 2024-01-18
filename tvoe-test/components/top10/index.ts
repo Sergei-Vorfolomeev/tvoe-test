@@ -1,1 +1,1 @@
-export * from 'components/top10/top10'
+export * from './top10'
