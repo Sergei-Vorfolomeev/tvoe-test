@@ -5,6 +5,10 @@
   .coverContainer {
     display: flex;
     justify-content: flex-end;
+
+    .mainCover {
+      z-index: -1;
+    }
   }
 
   .captionContainer {

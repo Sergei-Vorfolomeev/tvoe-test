@@ -16,11 +16,11 @@ export const MovieCard = ({ card }: MovieCardProps) => {
         <div
             className={s.cardContainer}
             onClick={() => {
-                if (card.id === '1') router.push('/series-page')
+                if (card.id === '1') router.push('/series-page?season=1')
             }}
         >
             <Image src={card.img} alt={card.name ?? ''} className={s.cardImg} />
-            <div className={s.rating}>{card.rating}</div>
+            {card.rating && <div className={s.rating}>{card.rating}</div>}
             <Typography>{card.name}</Typography>
         </div>
     )

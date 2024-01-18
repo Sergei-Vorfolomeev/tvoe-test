@@ -4,13 +4,13 @@ import s from './button.module.scss'
 
 type ButtonProps<T extends ElementType = 'button'> = {
     variant?: 'primary' | 'secondary' | 'link'
-    as?: T
+    like?: T
     children: ReactNode
 } & ComponentPropsWithoutRef<T>
 
 export const Button = <T extends ElementType = 'button'>({
     variant = 'primary',
-    as,
+    like,
     className,
     children,
     disabled,
@@ -18,7 +18,7 @@ export const Button = <T extends ElementType = 'button'>({
     ...rest
 }: ButtonProps<T> &
     Omit<ComponentPropsWithoutRef<T>, keyof ButtonProps<T>>) => {
-    const Component = as || 'button'
+    const Component = like || 'button'
     return (
         <Component
             onClick={onClick}

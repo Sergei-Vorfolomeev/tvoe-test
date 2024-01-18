@@ -71,8 +71,6 @@ export const SeriesHeader = ({}: SeriesHeaderProps) => {
                     </Button>
                 </div>
             </div>
-
-            <Seasons />
         </header>
     )
 }
