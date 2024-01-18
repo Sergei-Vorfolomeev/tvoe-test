@@ -14,10 +14,15 @@ import theWitcherImg from '../../assets/img/the-witcher.png'
 import { Top10 } from '@/components/top10/top10'
 
 const NEW_MOVIES: MovieCardType[] = [
-    { name: 'Синий жук', rating: '10', img: blueBugImg },
-    { name: 'Домашняя игра', rating: '6,9', img: homeGameImg },
-    { name: 'Салют 7', rating: '5,8', img: salutImg },
-    { name: 'Поймай меня, если сможешь', rating: '7,0', img: catchMeImg },
+    { id: '1', name: 'Синий жук', rating: '10', img: blueBugImg },
+    { id: '2', name: 'Домашняя игра', rating: '6,9', img: homeGameImg },
+    { id: '3', name: 'Салют 7', rating: '5,8', img: salutImg },
+    {
+        id: '4',
+        name: 'Поймай меня, если сможешь',
+        rating: '7,0',
+        img: catchMeImg,
+    },
 ]
 
 const TOP_10: Pick<MovieCardType, 'img'>[] = [

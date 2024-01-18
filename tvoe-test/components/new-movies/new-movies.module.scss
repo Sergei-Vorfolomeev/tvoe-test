@@ -1,5 +1,6 @@
 .container {
-  margin-left: 210px;
+  padding-left: 210px;
+  width: 100%;
 
   .title {
     margin-bottom: 25px;
@@ -8,5 +9,11 @@
   .newMoviesContainer {
     display: flex;
     gap: 32px;
+    min-width: 100%;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
