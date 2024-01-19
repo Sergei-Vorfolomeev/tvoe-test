@@ -1,7 +1,7 @@
 import React from 'react'
 import { MovieCard, Typography } from '@/components'
 import s from './recommendations.module.scss'
-import { MovieCardType } from '@/components/movie-card/movie-card.types'
+import { MovieCardType } from '@/models/types'
 
 type RecommendationsProps = {
   recommendations: MovieCardType[]
