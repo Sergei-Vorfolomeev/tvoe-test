@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { MovieHeader } from '@/components'
 import { Movie } from '@/components'
 import { RECOMMENDATIONS, SERIAL } from '@/models/data'

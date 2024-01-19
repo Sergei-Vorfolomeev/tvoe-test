@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import { EpisodeType } from '@/components/movie'
 import s from './episode.module.scss'
 import { Typography } from '@/components'
+import { EpisodeType } from '@/models/types'
 
 type EpisodeProps = {
   episode: EpisodeType
