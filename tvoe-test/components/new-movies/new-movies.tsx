@@ -1,6 +1,6 @@
-import { type MovieCardType } from '@/components/movie-card/movie-card.types'
 import { Typography, MovieCard } from '@/components'
 import s from './new-movies.module.scss'
+import { MovieCardType } from '@/models/types'
 
 type NewMoviesProps = {
   movies: MovieCardType[]

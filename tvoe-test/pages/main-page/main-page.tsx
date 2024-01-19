@@ -3,9 +3,8 @@ import { NewMovies } from '@/components/new-movies/new-movies'
 import { Top10 } from '@/components/top10'
 import { MainHeader } from '@/components/main-header'
 import { NEW_MOVIES, TOP_10 } from '@/models/data'
-import { type ReactElement } from 'react'
 
-const MainPage = (): ReactElement => {
+const MainPage = () => {
   return (
     <div className={s.mainContainer}>
       <MainHeader />
