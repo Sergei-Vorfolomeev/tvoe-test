@@ -1,23 +1,22 @@
-import { MovieCardType } from '@/components/new-movies/movie-card/movie-card.types'
-import { Typography } from '@/components'
-import { MovieCard } from '@/components/new-movies/movie-card/movie-card'
+import { type MovieCardType } from '@/components/movie-card/movie-card.types'
+import { Typography, MovieCard } from '@/components'
 import s from './new-movies.module.scss'
 
 type NewMoviesProps = {
-    movies: MovieCardType[]
+  movies: MovieCardType[]
 }
 
 export const NewMovies = ({ movies }: NewMoviesProps) => {
-    return (
-        <section className={s.container}>
-            <Typography variant={'title1'} as={'h1'} className={s.title}>
-                Новинки
-            </Typography>
-            <div className={s.newMoviesContainer}>
-                {movies?.map((el, index) => {
-                    return <MovieCard key={index} card={el} />
-                })}
-            </div>
-        </section>
-    )
+  return (
+    <div className={s.container}>
+      <Typography variant={'title1'} as={'h1'} className={s.title}>
+        Новинки
+      </Typography>
+      <div className={s.newMoviesContainer}>
+        {movies?.map((el, index) => {
+          return <MovieCard key={index} card={el} />
+        })}
+      </div>
+    </div>
+  )
 }

@@ -1,0 +1,44 @@
+.titleAndButtons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+
+  .title {
+    margin-right: 45px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 16px;
+    z-index: 1;
+
+    .seasonButton {
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      padding: 4px;
+      font-size: 24px;
+
+      a {
+        all: unset;
+      }
+    }
+    .active {
+      background: #fff;
+      color: var(--bg-color);
+    }
+  }
+}
+
+.episodes {
+  display: flex;
+  gap: 20px;
+  min-height: 430px;
+
+  min-width: 100%;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

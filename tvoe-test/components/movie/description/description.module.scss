@@ -1,0 +1,23 @@
+.title {
+  margin-bottom: 24px;
+}
+
+.warning {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 24px;
+  gap: 22px;
+
+  .icon {
+    color: #4b4b4b;
+  }
+
+  p {
+    margin: 0;
+    display: block;
+    font-size: 28px;
+    font-weight: 400;
+    color: #4b4b4b;
+    line-height: 36px;
+  }
+}

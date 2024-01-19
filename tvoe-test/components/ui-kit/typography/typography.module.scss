@@ -8,21 +8,41 @@
 }
 
 .title1 {
-  @include typography(var(--font-size-l), var(--font-weight-bold), var(--line-height-l))
+  @include typography(
+    var(--font-size-l),
+    var(--font-weight-bold),
+    var(--line-height-l)
+  );
 }
 
 .title2 {
-  @include typography(var(--font-size-l), var(--font-weight-medium), var(--line-height-l))
+  @include typography(
+    var(--font-size-l),
+    var(--font-weight-medium),
+    var(--line-height-l)
+  );
 }
 
 .body1 {
-  @include typography(var(--font-size-m), var(--font-weight-medium), var(--line-height-m))
+  @include typography(
+    var(--font-size-m),
+    var(--font-weight-medium),
+    var(--line-height-m)
+  );
 }
 
 .body2 {
-  @include typography(var(--font-size-m), var(--font-weight-regular), var(--line-height-m))
+  @include typography(
+    var(--font-size-m),
+    var(--font-weight-regular),
+    var(--line-height-m)
+  );
 }
 
 .body3 {
-  @include typography(var(--font-size-s), var(--font-weight-medium), var(--line-height-s))
+  @include typography(
+    var(--font-size-s),
+    var(--font-weight-medium),
+    var(--line-height-s)
+  );
 }

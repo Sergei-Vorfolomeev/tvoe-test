@@ -1,9 +1,9 @@
 import React from 'react'
-import SeriesPage from '@/pages/series-page/series-page'
+import MoviePage from '@/pages/movie-page/movie-page'
 import { router } from 'next/client'
 
 const Page = () => {
-    return <SeriesPage />
+  return <MoviePage />
 }
 
 export default Page

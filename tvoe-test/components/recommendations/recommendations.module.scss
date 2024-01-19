@@ -1,0 +1,14 @@
+.title {
+  margin-bottom: 24px;
+}
+
+.recommendationsContainer {
+  display: flex;
+  gap: 24px;
+  min-width: 100%;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
